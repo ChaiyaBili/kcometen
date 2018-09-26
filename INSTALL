@@ -1,0 +1,15 @@
+To build KCometen4 you will need a basic build system (g++, make, etc.)  You
+will also need to install cmake and selected Qt4 and KDE4 development packages.
+On Debian-based systems
+
+    apt-get install cmake kde-workspace-dev libqt4-opengl-dev
+
+should be sufficient.
+
+If you cannot see KCometen4 in KDE's Screen Saver settings module, you probably
+need to modify your environment.  Assuming you installed KCometen4 in
+/usr/local, add something like this to your .profile
+
+    export KDEDIRS=/usr/local:/usr
+
+Then restart your session.
